@@ -1,0 +1,90 @@
+p {
+  text-align: right;
+}
+
+.tf__team_skills_bar_single p {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.tf__about .tf__section_heading h5,
+.tf__about .tf__section_heading h2 {
+  text-align: right;
+}
+
+.tf__portfolio h5,
+.tf__portfolio h2,
+.tf__blog .tf__section_heading h5,
+.tf__blog .tf__section_heading h2 {
+  text-align: right;
+}
+
+.tf__single_testimonial .img {
+  left: 50px;
+  right: unset;
+}
+
+.tf__blog .common_btn {
+  left: 12px;
+  right: unset;
+}
+
+.tf__footer_content .icon {
+  margin-right: 0;
+  margin-left: 35px;
+}
+
+.tf__blog_text ul li i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.tf__about_img_text i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tf__about_text::after {
+  right: 0;
+}
+.tf__design_counter p {
+  text-align: center;
+}
+
+[dir="rtl"] .slick-slide {
+  float: left;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  direction: ltr;
+}
+
+.marquee_animi_rtl {
+  padding: 25px 0px 30px 0px;
+  -webkit-text-stroke: 1px var(--colorBlack);
+  -webkit-text-fill-color: transparent;
+  font-size: 110px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.tf__about_img_text {
+  top: -45px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.tf__blog_text {
+  right: 50%;
+  transform: translateX(50%);
+}
+.tf__subscribe_text form button {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: unset;
+}
+
+.ball-drag {
+  flex-direction: row-reverse;
+}
