@@ -1,737 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from zyan.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Feb 2024 04:11:22 GMT -->
-  <!-- Added by HTTrack --><meta
-    http-equiv="content-type"
-    content="text/html;charset=utf-8"
-  /><!-- /Added by HTTrack -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi"
-    />
-    <title>POOJA - Personal Portfolio Web Designer</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/font-awesome-pro.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/scroll_button.css" />
-    <link rel="stylesheet" href="css/plugin.css" />
-    <link rel="stylesheet" href="css/spacing.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-  </head>
 
-  <body>
-    <!--================================
-        PRELOADER START
-    =================================-->
-    <div class="preloader">
-      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-      </svg>
-      <h5 class="preloader-text">Loading</h5>
-    </div>
-    <!--================================
-        PRELOADER END
-    =================================-->
-    <!--================================
-        MENU START
-    =================================-->
-    <nav class="navbar navbar-expand-lg main_menu">
-      <div class="container main_menu_bg">
-        <a class="navbar-brand" href="index-2.html">
-          <!-- <img src="images/logoWhite.png" alt="poojs" class="img-fluid w-100" /> -->
-          PS
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-sharp fa-regular fa-bars bar_icon"></i>
-          <i class="fa-regular fa-xmark close_icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-              <a class="nav-link text_hover_animaiton active" href="#"
-                >Home </i
-              ></a>
-              <!-- <ul class="droap_menu">
-                <li><a href="index-2.html">Home 1</a></li>
-                <li><a href="index_2.html">Home 2</a></li>
-                <li><a href="index_3.html">Home 3</a></li>
-                <li><a href="index_4.html">Home 4</a></li>
-                <li><a href="index_rtl.html">Home RTL</a></li>
-              </ul> -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="#about"
-                >about us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="#service"
-                >services
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="#projects"
-                >Projects
-              </a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="blog_list.html"
-                >blog <i class="far fa-angle-down"></i
-              ></a>
-              <ul class="droap_menu">
-                <li>
-                  <a href="blog_list.html">Blog List</a>
-                </li>
-                <li><a href="blog_details.html">Blog Details</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text_hover_animaiton" href="contact.html"
-                >contact
-              </a>
-            </li> -->
-          </ul>
-          <span
-            class="toggle_icon c-pointer"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-            ><i
-              class="fa-sharp fa-sharp fa-regular fa-bars bar_icon-staggered"
-            ></i
-          ></span>
-        </div>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Panchal – Crafting Digital Experiences</title>
+    <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- favicon img -->
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
-      <div class="offcanvas-header">
-        <a class="offcanvas-logo" href="index_2.html">
-          <img src="images/logoWhite.png" alt="ZAYAN" class="img-fluid w-100" />
-        </a>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        >
-          <i class="fa-regular fa-xmark"></i>
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="tf__design_form offcanvas_form">
-          <div class="offcanvas-content-box">
-            <h4 class="offcanvas_title">About us</h4>
-            <p>
-              As a passionate web designer, I am dedicated to crafting exceptional digital experiences that blend creativity, functionality, and user-centric design. With [X years] of experience in the field, I specialize in transforming ideas into visually stunning and intuitive websites that leave a lasting impression.
-            </p>
-          </div>
-          <div class="offcanvas_contact_form">
-            <h4 class="offcanvas_title">Get In Touch</h4>
-            <form action="#">
-              <input
-                type="text"
-                placeholder="Your Name"
-                aria-autocomplete="list"
-              />
-              <input type="email" placeholder="Your Email" />
-              <textarea rows="4" placeholder="Message"></textarea>
-              <button type="submit" class="common_btn">submit now</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--================================
-        MENU END
-    =================================-->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <!--================================
-        BANNER START
-    =================================-->
-    <section
-      class="tf__banner banner"
-      style="background: url(images/bg/banner.jpg)"
-    >
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-xl-12">
-            <div class="tf__banner_text align-items-center">
-              <h1>
-                Hi, I'm POOJA! Creative
-                <span class="cd-headline rotate-1">
-                  <!-- ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  -->
-                  <span class="cd-words-wrapper">
-                    <b class="is-visible">Designer</b>
-                    <b>Coder</b>
-                    <b>Player</b>
-                  </span>
-                </span>
-              </h1>
-              <p>
-                As a dedicated UI/UX designer, my goal is to craft digital experiences that inspire and resonate with users. Grounded in solid design principles and meticulous attention to detail, I excel in transforming intricate concepts into intuitive interfaces. My expertise lies in creating captivating and seamless user journeys, ensuring every interaction leaves a lasting impression.
-              </p>
-              <ul>
-                <li>
-                  <a class="common_btn" href="#"
-                    >Read More <i class="fa-solid fa-arrow-down-to-line"></i
-                  ></a>
-                </li>
-                <!-- <li>
-                  <a
-                    class="banner_video_btn play_btn"
-                    href="https://www.youtube.com/watch?v=B-ytMSuwbf8"
-                    ><i class="fa-sharp fa-solid fa-circle-play"></i> Watch the
-                    Video</a
-                  >
-                </li> -->
-              </ul>
-            </div>
-          </div>
-          <!-- <div class="col-xl-5 col-lg-4">
-            <div class="tf__banner_img">
-              <div class="img">
-                <img
-                  src="images/banner_img_1.png"
-                  alt="ZYAN"
-                  class="img-fluid w-100"
-                />
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
-    <!--================================
-        BANNER END
-    =================================-->
-    <!--================================
-        SERVICE START
-    =================================-->
-    <section class="tf__service pt_130 xs_pt_80" id="service">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 m-auto">
-            <div class="tf__section_heading mb_40">
-              <h5 class="has-animation">MY serivce</h5>
-              <h2 class="has-animation">
-                Crafting stories through <br />
-                design and innovation
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="tf__single_service fade_left" data-trigerId="service">
-              <span>
-                <img
-                  src="svg/website-design.svg"
-                  alt="service"
-                  class="svg w-100"
-                />
-              </span>
-              <h3>Website Design</h3>
-              <p>
-                "At the heart of every pursuit lies the desire for fulfillment, a quest for satisfaction that propels us forward. It is not the mere pleasure we seek, but the journey towards it, fueled by our determination to overcome challenges. For it is through overcoming adversity that we discover true meaning and fulfillment in our endeavors
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="tf__single_service fade_left" data-trigerId="service">
-              <span>
-                <img
-                  src="svg/logo-design.svg"
-                  alt="service"
-                  class="svg w-100"
-                />
-              </span>
-              <h3>Figma To HTML</h3>
-              <p>
-                I am a passionate and innovative web designer dedicated to crafting exceptional digital experiences. With a keen eye for detail and a commitment to excellence, I specialize in translating ideas into captivating and user-friendly designs. Whether it's creating intuitive user interfaces.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="tf__single_service fade_left" data-trigerId="service">
-              <span>
-                <img
-                  src="svg/app-development.svg"
-                  alt="service"
-                  class="svg w-100"
-                />
-              </span>
-              <h3>UX/UI designer </h3>
-              <p>
-                am a dedicated UX/UI designer passionate about creating exceptional digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in crafting intuitive and visually stunning user interfaces that elevate brands and captivate users.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--================================
-        SERVICE END
-    =================================-->
-
-    <!--================================
-        ABOUT START
-    =================================-->
-    <section class="tf__about pt_140 xs_pt_80" id="about">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-xxl-7 col-lg-6 col-xl-6">
-            <div class="tf__section_heading pb_80 xs_pb_50">
-              <h5 class="has-animation">About Me</h5>
-              <h2 class="has-animation">
-                Transforming visions into exceptional portfolios
-              </h2>
-            </div>
-            <div class="tf__about_text">
-              <p>
-                Specializing in translating ambitious visions into polished portfolios that exceed expectations and leave a lasting impression
-              </p>
-              <a class="common_btn" href="#"
-                >Read More <i class="fa-solid fa-arrow-down-to-line"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-xxl-4 col-lg-6 col-xl-6">
-            <div class="tf__about_img fade_right" data-trigerId="about">
-              <img
-                src="images/girl2.jpg"
-                alt="ZYAN"
-                class="img-fluid w-100"
-              />
-              <div class="tf__about_img_text">
-                <i class="fas fa-chart-pie-alt"></i>
-                <div class="tf__about_content">
-                  <h4>Daily Activity</h4>
-                  <p>Web Designer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--================================
-        ABOUT END
-    =================================-->
-
-    <!--================================
-        DESIGN START
-    =================================-->
-    <section class="tf__design mt_135 xs_mt_40 mb_120 xs_mb_80" id="counter">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6">
-            <div class="tf__design_text">
-              <h2>Design <span>and Innovation</span></h2>
-              <p class="">
-                Infusing cutting-edge design and innovative solutions, I strive to push the boundaries of web development to deliver truly unique and impactful websites. With a passion for pushing the envelope and a dedication to staying ahead of trends, I am committed to crafting websites that not only meet but exceed expectations, setting new standards for excellence in design and user experience."
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-xl-6 col-md-6">
-                <div
-                  class="tf__design_counter fade_left"
-                  data-trigerId="counter"
-                >
-                  <span class="icon">
-                    <img
-                      src="svg/complete-project.svg"
-                      alt="counter"
-                      class="svg img-fluid w-100"
-                    />
-                  </span>
-                  <h3><span class="counter">10</span>+</h3>
-                  <p>Complete project</p>
-                </div>
-              </div>
-              <div class="col-xl-6 col-md-6">
-                <div
-                  class="tf__design_counter fade_left"
-                  data-trigerId="counter"
-                >
-                  <span class="icon">
-                    <img
-                      src="svg/client-review.svg"
-                      alt="counter"
-                      class="img-fluid w-100 svg"
-                    />
-                  </span>
-                  <h3><span class="counter">50</span>+</h3>
-                  <p>Client review</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div class="tf__design_form">
-              <h2 class="has-animation">GET TOUCH ME?</h2>
-              <p class="">
-                Let's collaborate! Get in touch with me today to discuss your web design needs and bring your vision to life.
-              </p>
-              <form action="#">
-                <input class="" type="text" placeholder="Your Name" />
-                <input class="" type="email" placeholder="Your Email" />
-                <input class="" type="text" placeholder="Phone Number" />
-                <textarea class="" rows="4" placeholder="Message"></textarea>
-                <button type="submit" class="common_btn">submit now</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--================================
-        DESIGN END
-    =================================-->
-
-    <!--================================
-        SKILLS START
-    =================================-->
-    <section class="tf__skills pt_115 xs_pt_75 pb_70 xs_pb_30" id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-10 col-lg-8 m-auto mb_60">
-            <div class="tf__section_heading mb_40">
-              <h5 class="has-animation">Education & Skill</h5>
-              <h2 class="has-animation">
-                Showcasing your talent <br />
-                amplifying your impact
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__single_skills fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".13"
-            >
-              <span>2015 - 2018</span>
-              <h3>Diploma In Infomation Technology</h3>
-              <p>
-                My Information Technology degree has provided me with a solid foundation in programming languages, systems analysis, and IT project management.
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__single_skills fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".25"
-            >
-              <span>2019 - 2021</span>
-              <h3>Bachelor's  Information Technology</h3>
-              <p>
-                With a degree in Information Technology, I have honed my analytical skills and problem-solving abilities, allowing me to tackle complex IT challenges with confidence.
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__single_skills fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".25"
-            >
-              <span>2021</span>
-              <h3>Web Designer</h3>
-              <p>
-                I am a skilled web designer with expertise in creating captivating and user-friendly digital experiences.
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__single_skills fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".25"
-            >
-              <span>From 2022 until now.</span>
-              <h3>Web Designer</h3>
-              <p>
-                With a passion for design and a focus on innovation, I am dedicated to delivering high-quality web solutions as a web designer
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__team_skills_bar_single fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".25"
-            >
-              <p>HTML</p>
-              <div id="bar1" class="barfiller">
-                <div class="tipWrap">
-                  <span class="tip"></span>
-                </div>
-                <span class="fill" data-percentage="75"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__team_skills_bar_single fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".25"
-            >
-              <p>WebFlow</p>
-              <div id="bar2" class="barfiller">
-                <div class="tipWrap">
-                  <span class="tip"></span>
-                </div>
-                <span class="fill" data-percentage="90"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__team_skills_bar_single fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".25"
-            >
-              <p>CSS</p>
-              <div id="bar3" class="barfiller">
-                <div class="tipWrap">
-                  <span class="tip"></span>
-                </div>
-                <span class="fill" data-percentage="80"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__team_skills_bar_single fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".25"
-            >
-              <p>Photoshop</p>
-              <div id="bar4" class="barfiller">
-                <div class="tipWrap">
-                  <span class="tip"></span>
-                </div>
-                <span class="fill" data-percentage="70"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__team_skills_bar_single fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".2"
-            >
-              <p>Java Script</p>
-              <div id="bar5" class="barfiller">
-                <div class="tipWrap">
-                  <span class="tip"></span>
-                </div>
-                <span class="fill" data-percentage="70"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div
-              class="tf__team_skills_bar_single fade_bottom"
-              data-trigerId="skills"
-              data-stagger=".25"
-            >
-              <p>Figma</p>
-              <div id="bar6" class="barfiller">
-                <div class="tipWrap">
-                  <span class="tip"></span>
-                </div>
-                <span class="fill" data-percentage="80"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--================================
-        SKILLS END
-    =================================-->
-
-    <!--================================
-        BRAND START
-    =================================-->
-    <div class="tf__brand mt_120 xs_mt_80">
-      <div class="row">
-        <div class="col-12">
-          <div class="marquee_animi">
-            <ul>
-              <li>* FIGMA</li>
-              <li>* PHOTOSHOP</li>
-              <li>* DESIGNE</li>
-              <li>* HTML</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--================================
-        BRAND END
-    =================================-->
-
-    
-
-    <!--================================
-        FOOTER START
-    =================================-->
-    <footer class="footer" id="footer">
-      <div class="footer-container">
-        <div class="pt_120 xs_pt_80 sm_pt_80">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <div
-                  class="tf__footer_content fade_right"
-                  data-trigerId="footer"
-                  data-stagger=".25"
-                >
-                  <div class="icon">
-                    <div class="icon-contianer">
-                      <img
-                        src="svg/map.svg"
-                        alt="footer"
-                        class="img-fluid w-100 svg"
-                      />
+<body>
+    <header class="py-4">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="#home"><img src="./images/whitepslogo.png" alt="main_logo"
+                        class="img-fluid w-50"></a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end gap-5" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Skill</a>
+                        </li>
+                    </ul>
+                    <div class="header_btn_wrapper">
+                        <button class="primary_btn_bg_without_border"> <a  href="mailto:poojapanchal1911@gmail.com"> Hire Me</a></button>
                     </div>
-                  </div>
-                  <div class="text">
-                    <h3>Address</h3>
-                    <p>India</p>
-                  </div>
                 </div>
-              </div>
-              <!-- <div class="col-lg-4">
-                <div
-                  class="tf__footer_content fade_right"
-                  data-trigerId="footer"
-                  data-stagger=".25"
-                >
-                  <div class="icon">
-                    <div class="icon-contianer">
-                      <img
-                        src="svg/phone.svg"
-                        alt="footer"
-                        class="img-fluid w-100 svg"
-                      />
-                    </div>
-                  </div>
-                  <div class="text">
-                    <h3>Lets talk us</h3>
-                    <a href="callto:1234567890">(603) 555-0123</a>
-                    <a href="callto:1234567890">(603) 555-0123</a>
-                  </div>
-                </div>
-              </div> -->
-              <div class="col-lg-4">
-                <div
-                  class="tf__footer_content fade_right"
-                  data-trigerId="footer"
-                  data-stagger=".25"
-                >
-                  <div class="icon">
-                    <div class="icon-contianer">
-                      <img
-                        src="svg/envelope.svg"
-                        alt="footer"
-                        class="img-fluid w-100 svg"
-                      />
-                    </div>
-                  </div>
-                  <div class="text">
-                    <h3>Send us email</h3>
-                    <a href="mailto:example@gmail.com"
-                      >poojapanchal@gmail.com</a
-                    >
-                  </div>
-                </div>
-              </div>
+
             </div>
+        </nav>
+    </header>
+    <section class="hero_section position-relative" id="home">
+        <div class="container">
             <div class="row">
-              <div class="col-12">
-                <div class="tf__footer_copyright">
-                  <p>© poojapanchal 2024 | All Rights Reserved</p>
-                  <ul>
-                    <li>
-                      <a href="#" class="text_hover_animaiton"
-                        >Trams & Condition</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="text_hover_animaiton"
-                        >Privacy Policy</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="text_hover_animaiton">Sitemap</a>
-                    </li>
-                  </ul>
+                <div class="col-lg-6 col-md-6 col-sm-12  d-flex flex-column justify-content-center">
+                    <div class="hero_content_title mb-sm-4">
+                        <h1 class="text-left mb-4">
+                            Designing the Future of Web Aesthetics
+                        </h1>
+                        <p class="mb-4">From concept to completion, I work closely with clients to create websites that
+                            meet their needs and exceed expectations.
+                            I specialize in designing responsive websites that engage users and drive results, ensuring
+                            every project reflects the brand's unique identity.
+                        </p>
+                        <div class="header_btn_wrapper">
+                            <button class="primary_btn_bg_without_border"><a  href="mailto:poojapanchal1911@gmail.com">Contact Us</a></button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="hero_image_wrapper position-relative">
+                        <div class="hero_img text-center">
+                            <img src="./images/woman-image.png" class="img-fluid w-50" alt="hero_image">
+                        </div>
+                        <div class="hero_logos_wrapper">
+                            <img src="./images/photoshoplogo.png" class="img-fluid photoshoplogo_logo"
+                                alt="photoshop_logo">
+                            <img src="./images/htmllogo.png" class="img-fluid htmllogo_logo" alt="html_logo">
+                            <img src="./images/csslogo.png" class="img-fluid csslogo_logo" alt="css_logo">
+                            <img src="./images/JavaScript-Logo.png" class="img-fluid jslogo_logo" alt="js_logo">
+                            <img src="./images/webflow.png" class="img-fluid webflow_logo" alt="webflow_logo">
+                            <img src="./images/figma.png" class="img-fluid figma_logo" alt="figma_logo">
+                            <img src="./images/bootsrap.png" class="img-fluid bootsrap_logo" alt="bootsrap_logo">
+                            <img src="./images/indesign.png" class="img-fluid indesign_logo" alt="indesign_logo">
+                            <img src="./images/ai.png" class="img-fluid ai_logo" alt="ai_logo">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+    </section>
+    <section class="about_section" id="about_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="about_us_title">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="about_dec">
+                        <p class="mb-lg-5 mb-md-4 mb-sm-4">Hi, I'm Pooja Panchal, a passionate Web Designer with over 3.5 years of
+                            experience in creating visually stunning and functional websites. I specialize in designing
+                            intuitive, user-friendly interfaces and crafting seamless digital experiences.</p>
+                        <div class="header_btn_wrapper">
+                            <button class="primary_btn_bg_without_border"><a  href="mailto:poojapanchal1911@gmail.com">Contact Me</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <ul class="about_ul">
+                        <li><span class="fw-bold">Responsive Design:</span> Ensuring your website looks great on any
+                            device.</li>
+                        <li><span class="fw-bold">UI/UX Design:</span>Creating designs that engage and delight users.
+                        </li>
+                        <li><span class="fw-bold">Webflow Projects: </span> Building and managing professional websites
+                            with precision.</li>
+                        <li><span class="fw-bold">Graphic Design:</span>Designing posters and visuals to enhance your
+                            brand's identity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="service_section" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="service_title">
+                        <h2>Services</h2>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-9 col-md-12">
+                    <div class="service_slider_wrapper">
+                        <div class="swiper service_swiper_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h3>UI/UX Design</h3>
+                                    <p>Designing seamless, intuitive user interfaces and experiences to enhance
+                                        engagement and satisfaction. I ensure that every interaction on your website
+                                        feels natural and enjoyable.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Poster Design</h3>
+                                    <p>Crafting vibrant and attention-grabbing posters tailored for events, promotions,
+                                        and campaigns. Whether for print or digital platforms, I ensure your message
+                                        leaves a lasting impact.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Figma</h3>
+                                    <p>Delivering sleek and interactive prototypes using Figma, allowing clients to
+                                        visualize the design process before development. My designs emphasize
+                                        functionality, usability, and collaboration.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Webflow Design</h3>
+                                    <p>Building visually stunning, responsive, and interactive websites using Webflow’s
+                                        no-code platform. I specialize in creating professional, high-performance
+                                        websites with seamless animations and smooth transitions.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>WordPress Website Design </h3>
+                                    <p>Creating custom WordPress websites tailored to your needs, including unique
+                                        themes and plugin integrations. I provide flexible solutions, from blogs and
+                                        portfolios to full-scale business websites.</p>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <!-- <div class="swiper-pagination"></div> -->
+                            <!-- Add Navigation -->
+                            <!-- <div class="swiper-button-prev"></div> -->
+                            <!-- <div class="swiper-button-next"></div> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio_section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="portfolio_title">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <p class="my-5">Explore my diverse portfolio showcasing over 3.5 years of experience in web design and
+                    development. I specialize in creating visually appealing and functional designs using HTML, CSS,
+                    JavaScript, Webflow, WordPress, React, and Angular. Additionally, my creativity extends to poster
+                    and logo design, where I combine artistic flair with innovative web technologies. Below, you can see
+                    my work and the impact of my design expertise.</p>
+            </div>
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web-design">Web Design</button>
+                <button class="filter-btn" data-filter="poster-design">Poster Design</button>
+                <button class="filter-btn" data-filter="logo-design">Logo Design</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Web Design Item -->
+                <div class="portfolio-item" data-category="web-design">
+                    <img src="images/portfolio/Professional-Real-Estate-WordPress-Website-Development.png"
+                        alt="professional real estate website">
+                    <div class="portfolio-info">
+                        <h3><a href="https://realestate.sparkleinfotech.com/" target="_blank">RealEstate Website</a></h3>
+                        <p>Crafted with HTML, CSS, and JavaScript</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web-design">
+                    <img src="images/portfolio/sparkleinfotech.png" alt="sparkleinfotech website">
+                    <div class="portfolio-info">
+                        <h3><a href="https://sparkle-sepia.vercel.app/" target="_blank">Portfolio Website</a></h3>
+                        <p>Crafted with HTML, CSS, and JavaScript</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web-design">
+                    <img src="images/portfolio/The-Kutija.png" alt="the kutija website">
+                    <div class="portfolio-info">
+                        <h3><a href="https://thekutija.com" target="_blank">Services base Website</a></h3>
+                        <p>Crafted with HTML, CSS, and JavaScript</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web-design">
+                    <img src="images/portfolio/Zync-AI-Powered.png" alt="the kutija website">
+                    <div class="portfolio-info">
+                        <h3><a href="https://www.zync.ai/" target="_blank">Webflow </a></h3>
+                        <p>Crafted with HTML, CSS, and JavaScript</p>
+                    </div>
+                </div>
+                 <div class="portfolio-item" data-category="web-design">
+                    <img src="images/portfolio/Tactical-Edge.png" alt="the kutija website">
+                    <div class="portfolio-info">
+                        <h3><a href="https://pricing-page-9cd9f4.webflow.io/" target="_blank">Webflow </a></h3>
+                        <p>Crafted with HTML, CSS, and JavaScript</p>
+                    </div>
+                </div>
+                <!-- Poster Design Item -->
+                <div class="portfolio-item" data-category="poster-design">
+                    <img src="images/portfolio/dussehra-poster.png" alt="dussehra-poster Design">
+                   
+                    <div class="portfolio-info">
+                        <h3>Event Poster</h3>
+                        <p>Happy Dussehra</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="poster-design">
+                    <img src="images/portfolio/janmashtmi.png" alt="janmashtmi Poster Design">
+                    <div class="portfolio-info">
+                        <h3>Event Poster</h3>
+                        <p>Happy krishna janmashtmi</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="poster-design">
+                    <img src="images/portfolio/happy new year.png" alt="happy new year Poster Design">
+                    <div class="portfolio-info">
+                        <h3>Event Poster</h3>
+                        <p>Happy New year</p>   
+                    </div>
+                </div>
+                 <div class="portfolio-item" data-category="poster-design">
+                    <img src="images/portfolio/republicday.png" alt="republicday Poster Design">
+                    <div class="portfolio-info">
+                        <h3>Event Poster</h3>
+                        <p>Happy Republic Day</p>   
+                    </div>
+                </div>
+                 <div class="portfolio-item" data-category="poster-design">
+                    <img src="images/portfolio/makar-sankranti.png" alt="makar-sankranti Poster Design">
+                    <div class="portfolio-info">
+                        <h3>Event Poster</h3>
+                        <p>Happy Makar Sankranti</p>   
+                    </div>
+                </div>
+                <!-- Logo Design Item -->
+                <div class="portfolio-item brand-portfolio-item" data-category="logo-design">
+                    <img src="images/portfolio/manayaenterprise.png" alt="manayaenterprise">
+                    <div class="portfolio-info">
+                        <h3>Brand Logo</h3>
+                        <p>Manaya Enterprise</p>
+                    </div>
+                </div>
+                <div class="portfolio-item brand-portfolio-item" data-category="logo-design">
+                    <img src="images/portfolio/WhiteBgLogo.png" alt="Logo Design">
+                    <div class="portfolio-info">
+                        <h3>Brand Logo</h3>
+                        <p>Eartham Intenational</p>
+                    </div>
+                </div>
+                 <div class="portfolio-item brand-portfolio-item" data-category="logo-design">
+                    <img src="images/portfolio/sparklefinancialservice.png" alt="Logo Design">
+                    <div class="portfolio-info">
+                        <h3>Brand Logo</h3>
+                        <p>sparkle financial service</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Modal -->
+            <div class="image-modal" id="imageModal">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+            </div>
+
+        </div>
+    </section>
+  <section class="skill_section" id="skill">
+    <div class="container">
+        <h2 class="mb-5">My Skills</h2>
+        <div class="skill_grid">
+            <div class="skill_card">
+                <div class="card_front">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <h4>90%</h4>
+                </div>
+                <div class="card_back">
+                    <p>Creating structured, semantic, and accessible web content.</p>
+                </div>
+            </div>
+            <div class="skill_card">
+                <div class="card_front">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <h4>85%</h4>
+                </div>
+                <div class="card_back">
+                    <p>Responsive design with modern animations and effects.</p>
+                </div>
+            </div>
+            <div class="skill_card">
+                <div class="card_front">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <h4>80%</h4>
+                </div>
+                <div class="card_back">
+                    <p>Interactive and dynamic web experiences.</p>
+                </div>
+            </div>
+            <div class="skill_card">
+                <div class="card_front">
+                    <img src="./images/webflowskill.png" alt="Webflow Icon">
+                    <h3>Webflow</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                    <h4>75%</h4>
+                </div>
+                <div class="card_back">
+                    <p>Creating responsive and dynamic web experiences.</p>
+                </div>
+            </div>
+            <div class="skill_card">
+                <div class="card_front">
+                    <img src="./images/posterdesignicon.png" alt="Poster Design Icon">
+                    <h3>Poster Design</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <h4>90%</h4>
+                </div>
+                <div class="card_back">
+                    <p>Creative designs for marketing and events.</p>
+                </div>
+            </div>
+            <div class="skill_card">
+                <div class="card_front">
+                    <img src="./images/logodesignicon.png" alt="Brand Logo Icon">
+                    <h3>Brand Logo Design</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                    <h4>75%</h4>
+                </div>
+                <div class="card_back">
+                    <p>Creating memorable brand identities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer_logo">
+                      <a href="#home">  <img src="./images/whitepslogo.png" class="img-fluid" alt="footer_logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-6 col-sm-12">
+                    <ul class="footer_ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about_us">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="mailto:poojapanchal1911@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-    <!--================================
-  FOOTER END
-=================================-->
-    <!--================================
-        SCROLL BUTTON START
-    =================================-->
-    <div class="progress active c-pointer">
-      <svg
-        class="progress-svg"
-        width="100%"
-        height="100%"
-        viewBox="-1 -1 102 102"
-      >
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-      </svg>
-    </div>
-    <!--================================
-        SCROLL BUTTON END
-    =================================-->
+    <!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@panzoom/panzoom@4.4.2/dist/panzoom.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--================================
-        CURSOR START
-    =================================-->
-    <div id="magic-cursor">
-      <div id="ball"></div>
-    </div>
-    <!--================================
-        CURSOR END
-    =================================-->
+</body>
 
-    <script src="js/plugin.js"></script>
-    <!--scroll button js-->
-    <script src="js/scroll_button.js"></script>
-    <!--sticky sidebar js-->
-    <script src="js/sticky_sidebar.js"></script>
-    <!-- Animation -->
-    <script src="js/animation.js"></script>
-    <!--main/custom js-->
-    <script src="js/main.js"></script>
-  </body>
-
-  <!-- Mirrored from zyan.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Feb 2024 04:11:32 GMT -->
 </html>
